@@ -1,0 +1,95 @@
+<template name="活動申請">
+<form>
+        <table align="center" frame="volid" rules="none" height="500">
+            <tr align="center">
+                <td colspan="2" height="50"><h2>社團活動申請表</h2></td>
+            </tr>
+            <tr>
+                <td align="center" width="150" height="30"><h3>活動類別</h3></td>
+                <td><select name="DropDownList1">
+                    <OPTION value="校內活動">校內活動</OPTION>
+                    <OPTION value="全校性活動">全校性活動</OPTION>
+                    <OPTION value="校際性活動">校際性活動</OPTION>
+                    <OPTION value="社會(區)服務">社會(區)服務</OPTION>
+                    <OPTION value="校外活動">校外活動</OPTION>
+                    <OPTION value="班級活動">校內活動</OPTION>
+                    <OPTION value="班級活動">班級活動</OPTION>
+                    <OPTION value="特色主題">特色主題</OPTION>
+                    <OPTION value="服務學習">服務學習</OPTION>
+                    <OPTION value="其他">其他</OPTION>
+                </select></td>
+            </tr>
+            <tr>
+                <td align="center" height="30"><h3>活動名稱</h3></td>
+                <td><input name="event_name" type="text" style="width:200px;"></td>
+            </tr>
+            <tr>
+                <td align="center"><h3>活動內容</h3></td>
+                <td><textarea name="event_content" rows="5" cols="20"
+                              style="font-size:Small;height:100px;width:410px;"></textarea></td>
+            </tr>
+            <tr>
+                <td align="center" height="30"><h3>活動地點</h3></td>
+                <td><input name="event_spot" type="text" style="width:200px;"></td>
+            </tr>
+            <tr>
+                <td rowspan="2" align="center"><h3>日期時間</h3></td>
+                <td>報名期間&nbsp;<input name="TextBox4" type="date" title="請點選日期" style="width:120px;">&nbsp;至&nbsp;
+                    <input name="TextBox5" type="date" title="請點選日期" style="width:120px;"></td>
+            </tr>
+            <tr>
+                <td>活動期間&nbsp;<input name="TextBox6" type="date" title="請點選日期" style="width:120px;">&nbsp;至&nbsp;
+                    <input name="TextBox7" type="date" title="請點選日期" style="width:120px;"></td>
+            </tr>
+            <tr>
+                <td rowspan="2" align="center"><h3>參加人數與對象</h3></td>
+                <td> 教師 <input name="TextBox8" type="text" style="width:72px;">人
+                    學生 <input name="TextBox9" type="text" style="width:72px;">人
+                </td>
+            </tr>
+            <tr>
+                <td>其他 <input name="TextBox10" type="text" style="width:72px;">人
+                </td>
+            </tr>
+            <tr>
+                <td align="center"><h3>帶隊老師姓名</h3></td>
+                <td>
+                    <input name="TextBox11" type="text" style="width:100px;">(可略)
+                </td>
+            </tr>
+            <tr>
+                <td align="center"><h3>帶隊老師電話</h3></td>
+                <td>
+                    <input name="TextBox12" type="text" style="width:100px;">(可略)
+                </td>
+            </tr>
+            <tr>
+                <td align="center" height="30"><h3>前往方式</h3></td>
+                <td><input name="CheckBox4" type="checkbox"> 大型巴士 <input name="CheckBox5" type="checkbox"> 大眾運輸工具<input
+                        name="CheckBox6" type="checkbox"> 自行前往 <input name="CheckBox7" type="checkbox"> 於校內舉行
+                </td>
+
+            </tr>
+            <tr>
+                <td align="center"><h3>請求事項</h3></td>
+                <td><textarea name="TextBox13" style="font-size:Small;height:100px;width:410px;"></textarea></td>
+            </tr>
+            <tr height="30">
+                <td align="center"><h3>活動宣傳</h3></td>
+                <td><input name="file1" type="file"></td>
+            </tr>
+            <tr height="30">
+                <td align="center" valign="middle" colspan="2" style="padding: 0px; margin: 0px">
+                    <input type="reset" name="Button1" value="取消申請" id="Button1" style="font-size:12px;">
+                    &nbsp;
+                    <input type="submit" name="Button2" value="下一步" id="Button2" style="font-size:12px;height: 20px">
+
+                </td>
+            </tr>
+
+
+        </table>
+</form>
+
+
+</template>

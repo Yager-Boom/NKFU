@@ -1,0 +1,71 @@
+<head>
+    <meta charset="UTF-8"/>
+    <title>社團預借系統-活動列表</title>
+    <link href="/menu.css" rel="stylesheet" type="text/css">
+    <link href="/style.css" rel="stylesheet" type="text/css">
+    <link href='/basic-views_file/fullcalendar.css' rel='stylesheet' />
+    <link href='/basic-views_file/fullcalendar.print.css' rel='stylesheet' media='print' />
+    <script src='/basic-views_file/lib/moment.min.js'></script>
+    <script src='/basic-views_file/lib/jquery.min.js'></script>
+    <script src='/basic-views_file/fullcalendar.min.js'></script>
+</head>
+<template name="layout">
+    <div class="wrapper">
+        <div class="header">
+            <div class="tittle">
+                <img src="images/Logo.png" width="320" height="50" class="logo">
+                <ul class="menu">
+                    <li class="menu-li"><a href="index.html" class="menu-a">活動列表</a></li>
+                    <li class="menu-li"><a href="step_1.html" class="menu-a">活動申請</a></li>
+                    <li class="menu-li"><a href="apply_active.html" class="menu-a">使用說明</a></li>
+                    <li class="menu-li"><a href="result.html" class="menu-a">成果展示</a></li>
+                    <li class="menu-li"><a href="calendar.html" class="menu-a">行事曆</a></li>
+                </ul>
+            </div>
+            <div class="search-Column">
+                {{> search }}
+            </div>
+        </div>
+
+        <div class="link">
+            <h3 class="link-bw">活動狀態</h3>
+            <ul class="link-ul">
+                <li class="linkitem-li"><a href="index.html" class="linkitem-a"><h4>全部</h4></a></li>
+                <li class="linkitem-li"><a href="index_1.html" class="linkitem-a"><h4>進行中</h4></a></li>
+                <li class="linkitem-li"><a href="index_2.html" class="linkitem-a"><h4>報名中</h4></a></li>
+                <li class="linkitem-li"><a href="index_3.html" class="linkitem-a"><h4>審核中</h4></a></li>
+            </ul>
+            <h3 class="link-bw2">相關連結</h3>
+            <ul class="link-ul">
+                <li class="linkitem-li2"><a href="http://www.gen.nkfust.edu.tw/bin/home.php" class="linkitem-a2">
+                    <img src="images/1.jpg" width="35px" height="35px" class="linkitem-i">
+                    <p class="linkitem-w">
+                    <h5>總務處</h5>
+                    <h5>Office of General Affairs</h5>
+                    </p>
+                </a></li>
+                <li class="linkitem-li2"><a href="http://www.ksa.nkfust.edu.tw/bin/home.php" class="linkitem-a2">
+                    <img src="images/2.jpg" width="35px" height="35px" class="linkitem-i">
+                    <p class="linkitem-w">
+                    <h5>學務處</h5>
+                    <h5>Office of Student Affairs</h5>
+                    </p>
+                </a></li>
+                <li class="linkitem-li2"><a href="http://www.acad.nkfust.edu.tw/bin/home.php" class="linkitem-a2">
+                    <img src="images/3.jpg" width="35px" height="35px" class="linkitem-i">
+                    <p class="linkitem-w">
+                    <h5>教務處</h5>
+                    <h5>Office of Academic Affairs</h5>
+                    </p>
+                </a></li>
+            </ul>
+        </div>
+
+            {{> yield}}
+
+        <div class="footer">
+            <h5>校址:824高雄市燕巢區大學路1號 電話:(07)601-1000</h5>
+            <h5>Designed by 課外活動指導組</h5>
+        </div>
+    </div>
+</template>

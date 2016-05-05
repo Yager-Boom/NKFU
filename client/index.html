@@ -1,0 +1,51 @@
+<template name="活動資料行">
+    <tr class="ttr" height="40">
+        <td><a href="{{pathFor "活動詳情"}}" class="tb-a">
+            <img src="{{event_img event_state}}" class="Square">
+            {{event_name}}</a></td>
+        <td><a href="/index_a_{{_id}}.html" class="tb-a">{{event_date_1}} 至 {{event_date_2}}</a></td>
+        <td><a href="/index_a_{{_id}}.html" class="tb-a">{{event_spot}}</a></td>
+        <td><a href="/index_a_{{_id}}.html" class="tb-a">{{event_date_3}} 至 {{event_date_4}}</a></td>
+        <td><a href="/index_a_{{_id}}.html" class="tb-a">{{event_supervise}}</a></td>
+    </tr>
+</template>
+<template name="活動列表">
+    <div class="content">
+        <ul class="date-ul">
+            <li class="date-il"><a href="#" class="date-a"><h4>全部活動</h4></a></li>
+            <li class="date-il"><a href="#" class="date-a"><h4>11/14</h4></a></li>
+            <li class="date-il"><a href="#" class="date-a"><h4>11/13</h4></a></li>
+            <li class="date-il"><a href="#" class="date-a"><h4>11/12</h4></a></li>
+            <li class="date-il"><a href="#" class="date-a"><h4>11/11</h4></a></li>
+            <li class="date-il"><a href="#" class="date-a"><h4>11/10</h4></a></li>
+            <li class="date-il"><a href="#" class="date-a"><h4>11/09</h4></a></li>
+            <li class="date-il"><a href="#" class="date-a"><h4>11/08</h4></a></li>
+            <li class="date-il"><a href="#" class="date-a"><h4>11/07</h4></a></li>
+        </ul>
+        <table class="table" width="1000" cellpadding="0" cellspacing="0">
+            <tr height="30">
+                <td><h3 class="tb">活動名稱</h3></td>
+                <td><h3 class="tb">活動日期</h3></td>
+                <td><h3 class="tb">活動地點</h3></td>
+                <td><h3 class="tb">報名時間</h3></td>
+                <td><h3 class="tb">指導單位</h3></td>
+            </tr>
+            {{#each 撈出的資料}}
+                {{> 活動資料行}}
+            {{/each}}
+
+        </table>
+
+        <ul class="page">
+            <li class="page-li"><a href="#" class="page-a"><h3>&lt;</h3></a></li>
+            <li class="page-li"><a href="#" class="page-a"><h3>1</h3></a></li>
+            <li class="page-li"><a href="#" class="page-a"><h3>2</h3></a></li>
+            <li class="page-li"><a href="#" class="page-a"><h3>3</h3></a></li>
+            <li class="page-li"><a href="#" class="page-a"><h3>4</h3></a></li>
+            <li class="page-li"><a href="#" class="page-a"><h3>5</h3></a></li>
+            <li class="page-li"><a href="#" class="page-a"><h3>&gt;</h3></a></li>
+        </ul>
+
+
+    </div>
+</template>

@@ -1,0 +1,108 @@
+body{
+    margin: 0;
+}
+
+h5{
+	font-size: 12px;
+	margin: 0px;
+}
+h4{
+	font-size: 14px;
+	margin: 0px;
+}
+h3{
+	font-size: 18px;
+    margin: 0px;
+}
+h2{
+    font-size: 24px;
+    margin: 0px;
+    color: #000;
+    
+}
+
+
+button{
+    height: 30px;
+    width: 70px;
+    background-color: white;
+    margin-left: 30px;
+
+}
+.wrapper{
+	margin-left:auto; 
+	margin-right: auto;
+    margin-top: 0px;
+	background-color: white;
+	width: 1366px;
+    height: 800px;
+    position:relative;
+}
+.header{
+	background-image: url(images/rainbow.png);
+	height: 200px;
+	width: 1366px;
+	background-repeat: no-repeat;
+
+}
+.link{
+	background-color: white;
+	width: 300px;
+    float: left;
+    height: auto;
+}
+.content{
+	background-color: white;
+	width: 1066px;
+
+	float: right;
+}
+.footer{
+    background-color: #fee1bc;
+    float: left;
+    height: 40px;
+    width: 1366px;
+    padding-top: 10px;
+    text-align: center;
+    color:#bd996a;
+    margin: 10px;
+}
+.tittle{
+	background-color: white;
+    width: 1366px;
+	height: 80px;
+	position:absolute;
+    top: 50px;
+
+}
+.search-Column{
+    position:absolute;
+    top: 150px;
+    left: 400px; 
+
+}
+
+.search-img{
+    margin-right: 8px;
+}
+
+.logo{
+	padding: 10px;
+}
+.link-bw{
+	margin-left:20px;
+	margin-top: 90px; 
+}
+.link-bw2{
+	margin-left:20px; 
+	margin-top: 80px;
+}
+.table{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0px;
+}
+.page{
+    margin-left: 300px;
+    margin-top: 30px;
+}
